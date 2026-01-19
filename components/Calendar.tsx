@@ -1,9 +1,10 @@
-import React from 'react';
+import Link from 'next/link';
 
 export interface Event {
   date: string | Date;
   category: "Evento" | "Produto";
   name: string;
+  link: string;
 }
 
 interface CalendarProps {
@@ -62,7 +63,7 @@ export default function Calendar({ events }: CalendarProps) {
                       <span className="py-0.5 font-extrabold text-zinc-900">
                         {event.category}
                       </span>
-                      <h3 className="text-lg font-medium text-gray-900">{event.name}</h3>
+                      <Link href={event.link}><h3 className="text-lg font-medium text-gray-900">{event.name}</h3></Link>
                     </div>
                   </li>
                 );
