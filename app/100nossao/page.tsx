@@ -21,7 +21,7 @@ export default function CemNossao() {
       <div className="h-screen border-b-4 border-dashed border-zinc-700 flex flex-col justify-center items-center">
 
         <div className={`flex flex-col items-center justify-center text-center`}>
-          <h1 className={`${blackOpsOne.className} text-6xl sm:text-8xl md:text-9xl lg:text-[180px] xl:text-[200px] text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-600 transition-opacity duration-1500 delay-300 ease-in-out transform ${loaded ? 'opacity-100' : 'opacity-0'}`}>
+          <h1 className={`${blackOpsOne.className} text-5xl sm:text-8xl md:text-9xl lg:text-[180px] xl:text-[200px] text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-600 transition-opacity duration-1500 delay-300 ease-in-out transform ${loaded ? 'opacity-100' : 'opacity-0'}`}>
             100NOSSÃO
           </h1>
         </div>
