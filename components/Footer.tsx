@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className={`${is100Nossao ? 'bg-[#060606]' : 'bg-red-950' } text-center py-4 w-full`}>
+      <div className={`${is100Nossao ? 'bg-[#060606]' : 'bg-red-950' } text-center text-sm sm:text-base py-4 w-full`}>
         <p>&copy; {new Date().getFullYear()} Associação Atlética Acadêmica da Ciência e Engenharia de Computação. Todos os direitos reservados.</p>
       </div>
     </footer >
