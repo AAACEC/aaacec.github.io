@@ -38,7 +38,7 @@ export default function CemNossao() {
         </div>
 
         <div className="order-1 md:order-2 space-y-8 px-2">
-          <h2 className={`${blackOpsOne.className} text-5xl md:text-6xl text-white`}>
+          <h2 className={`${blackOpsOne.className} text-4xl sm:text-5xl md:text-6xl text-white`}>
             O MAIOR <span className="text-red-600">SOM AUTOMOTIVO UNIVERSITÁRIO</span> DO BRASIL
           </h2>
 
