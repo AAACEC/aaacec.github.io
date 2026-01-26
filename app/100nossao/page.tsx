@@ -21,7 +21,7 @@ export default function CemNossao() {
       <div className="h-screen border-b-4 border-dashed border-zinc-700 flex flex-col justify-center items-center">
 
         <div className={`flex flex-col items-center justify-center text-center`}>
-          <h1 className={`${blackOpsOne.className} text-7xl md:text-9xl lg:text-[180px] xl:text-[200px] text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-600 transition-opacity duration-1500 delay-300 ease-in-out transform ${loaded ? 'opacity-100' : 'opacity-0'}`}>
+          <h1 className={`${blackOpsOne.className} text-6xl sm:text-8xl md:text-9xl lg:text-[180px] xl:text-[200px] text-transparent bg-clip-text bg-gradient-to-b from-neutral-100 to-neutral-600 transition-opacity duration-1500 delay-300 ease-in-out transform ${loaded ? 'opacity-100' : 'opacity-0'}`}>
             100NOSSÃO
           </h1>
         </div>
@@ -38,19 +38,19 @@ export default function CemNossao() {
         </div>
 
         <div className="order-1 md:order-2 space-y-8 px-2">
-          <h2 className={`${blackOpsOne.className} text-5xl md:text-6xl text-white`}>
+          <h2 className={`${blackOpsOne.className} text-6xl text-center md:text-left text-white`}>
             O MAIOR <span className="text-red-600">SOM AUTOMOTIVO UNIVERSITÁRIO</span> DO BRASIL
           </h2>
 
           <div className="flex flex-col items-center md:items-start space-y-6 text-neutral-300 font-light text-lg leading-relaxed">
             <p>
               Um sistema de som de alta potência acoplado numa estrutura de transporte personalizada (originalmente, um carrinho de supermercado).
-              Há mais de 20 anos, o 100NOSSÃO é um ícone da cultura universitária da UNICAMP, sendo presença garantida nos eventos da AAACEC e nas melhores festas de Barão Geraldo.
+              Há mais de 20 anos, o 100Nossão é um ícone da cultura universitária da UNICAMP, sendo presença garantida nos eventos da AAACEC e nas melhores festas de Barão Geraldo.
             </p>
 
             <Link href="https://ig.me/m/100nossao4x4">
               <button className="bg-red-600 text-black font-bold py-3 px-6 rounded-lg transition-colors duration-300 nowrap cursor-pointer">
-                Quero alugar o 100NOSSÃO
+                Quero alugar o 100Nossão
               </button>
             </Link>
           </div>
