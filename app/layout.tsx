@@ -10,7 +10,10 @@ const bricolageGrotesque = Bricolage_Grotesque({
 });
 
 export const metadata: Metadata = {
-  title: "AAACEC",
+  title: {
+    default: "AAACEC",
+    template: "%s | AAACEC",
+  },
   description: "Site oficial da Associação Atlética Acadêmica da Ciência e Engenharia de Computação",
 };
 
