@@ -13,7 +13,7 @@ export default function Home() {
       date: new Date(2026, 2, 27),
       category: "Evento",
       name: "Churras à Trois 2026",
-      link: "https://cheers.com.br/aaacec"
+      link: "https://cheers.com.br/evento/churras-a-trois-29268"
     },
   ];
 
