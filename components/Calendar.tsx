@@ -24,6 +24,10 @@ export default function Calendar({ events }: CalendarProps) {
   const groupedEvents: Record<string, Event[]> = {};
 
   sortedEvents.forEach((event) => {
+    if (new Date(event.date).getTime() - new Date().getTime() < 0) {
+      return;
+    }
+
     const d = new Date(event.date);
     const monthYear = new Intl.DateTimeFormat('pt-BR', {
       month: 'long',
