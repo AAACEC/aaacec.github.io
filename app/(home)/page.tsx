@@ -15,6 +15,12 @@ export default function Home() {
       name: "Churras à Trois 2026",
       link: "https://cheers.com.br/evento/churras-a-trois-29268"
     },
+    {
+      date: new Date(2026, 4, 5),
+      category: "Produto",
+      name: "Término das Vendas do Kit Bixe 2026",
+      link: "https://cheers.com.br/pagina/aaacec"
+    },
   ];
 
   return (
