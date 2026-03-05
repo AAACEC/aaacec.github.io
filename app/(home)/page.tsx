@@ -10,13 +10,7 @@ import PageTitle from "@/components/PageTitle";
 export default function Home() {
   const events: Event[] = [
     {
-      date: new Date(2026, 2, 27),
-      category: "Evento",
-      name: "Churras à Trois 2026",
-      link: "https://cheers.com.br/evento/churras-a-trois-29268"
-    },
-    {
-      date: new Date(2026, 5, 4),
+      date: new Date("2015-04-05"),
       category: "Produto",
       name: "Término das Vendas do Kit Bixe 2026",
       link: "https://cheers.com.br/pagina/aaacec"
