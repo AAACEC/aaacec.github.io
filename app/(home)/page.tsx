@@ -10,7 +10,7 @@ import PageTitle from "@/components/PageTitle";
 export default function Home() {
   const events: Event[] = [
     {
-      date: new Date("2015-04-05"),
+      date: new Date("2026-04-05"),
       category: "Produto",
       name: "Término das Vendas do Kit Bixe 2026",
       link: "https://cheers.com.br/pagina/aaacec"
@@ -24,7 +24,7 @@ export default function Home() {
         subtitle={<>A Atlética da <span className="font-bold">Computação Unicamp</span></>}
       />
 
-      <MessageBoard text="🥳 BEM-VINDES BIXES 026 🥳" />
+      <MessageBoard text="👕 COMPRE O KIT BIXE 2026 👕" />
 
       <div className="w-full text-center p-10 my-10">
         <p className="text-4xl md:text-6xl xl:text-8xl text-center text-zinc-900 font-medium max-w-6xl mx-auto mb-10">Há <span className="font-extrabold">{new Date().getFullYear() - 1994} anos</span> fomentando o esporte universitário</p>

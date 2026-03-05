@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 export interface Event {
-  date: string | Date;
+  date: Date;
   category: "Evento" | "Produto";
   name: string;
   link: string;
@@ -18,20 +18,19 @@ export default function Calendar({ events }: CalendarProps) {
 
   // 1. Sort events by date
   const sortedEvents = [...events].sort((a, b) => {
-    return new Date(a.date).getTime() - new Date(b.date).getTime();
+    return a.date.getTime() - b.date.getTime();
   });
 
   const groupedEvents: Record<string, Event[]> = {};
 
   sortedEvents.forEach((event) => {
-    if (new Date(event.date).getTime() - new Date().getTime() < 0) {
+    if (event.date.getTime() - new Date().getTime() < 0) {
       return;
     }
 
-    const d = new Date(event.date);
     const monthYear = new Intl.DateTimeFormat('pt-BR', {
       month: 'long',
-    }).format(d).replace(/^\w/, (c) => c.toUpperCase());
+    }).format(event.date).replace(/^\w/, (c) => c.toUpperCase());
 
     if (!groupedEvents[monthYear]) {
       groupedEvents[monthYear] = [];
@@ -42,7 +41,7 @@ export default function Calendar({ events }: CalendarProps) {
   return (
     <div className="w-full border-zinc-900 lg:border-2 p-10 rounded-xl max-w-4xl mx-auto">
       {Object.keys(groupedEvents).length === 0 ? (
-        <p className="text-zinc-600 text-center py-4">Nenhum evento agendado.</p>
+      <p className="text-zinc-600 text-center font-medium font-medium py-4">Nenhum evento agendado.</p>
       ) : (
         Object.entries(groupedEvents).map(([month, monthEvents]) => (
           <div key={month} className="mb-8">
@@ -52,9 +51,8 @@ export default function Calendar({ events }: CalendarProps) {
 
             <ul className="space-y-4">
               {monthEvents.map((event, index) => {
-                const eventDate = new Date(event.date);
-                const day = eventDate.getDate();
-                const weekday = new Intl.DateTimeFormat('pt-BR', { weekday: 'short' }).format(eventDate).replace('.', '');
+                const day = event.date.getDate();
+                const weekday = new Intl.DateTimeFormat('pt-BR', { weekday: 'short' }).format(event.date).replace('.', '');
 
                 return (
                   <li key={`${event.name}-${index}`} className="flex gap-4">
